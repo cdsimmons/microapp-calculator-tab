@@ -1,0 +1,20 @@
+
+
+<div class="calculator">
+	<div class="row calculator__cost">
+		<div class="column column--icon">&pound;</div>
+		<div class="column column--input"><input type="number" min="0.01" step="0.01" max="2500" ng-model="cost"/></div>
+	</div>
+	<div class="row calculator__cost">
+		<div class="column column--icon">%</div>
+		<div class="column column--input"><input type="number" placeholder="Tip, -Discount, etc" ng-model="percentage"/></div>
+	</div>
+	<div class="row calculator__people">
+		<div class="column column--icon"><img src="images/people.svg" class="icon icon--people"/></div>
+		<div class="column column--input"><input type="number" min="1" ng-model="people"/></div>
+	</div>
+	<div class="row calculator__result">
+		<div class="column column--icon">&pound;</div>
+		<div class="column column--input"><span class="result__amount">{{(cost+(cost*(percentage/100)))/people}}</span></div>
+	</div>
+</div>
