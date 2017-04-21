@@ -15,6 +15,6 @@
 	</div>
 	<div class="row calculator__result">
 		<div class="column column--icon">&pound;</div>
-		<div class="column column--input"><span class="result__amount">{{(cost+(cost*(percentage/100)))/people}}</span></div>
+		<div class="column column--input"><span class="result__amount">{{(cost+(cost*(percentage/100)))/people | number:2}}</span></div>
 	</div>
 </div>
